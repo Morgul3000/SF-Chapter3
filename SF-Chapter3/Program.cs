@@ -8,6 +8,10 @@ namespace SF_Chapter3
         {
             string Name = "Alex";
             Console.WriteLine(Name);
+            Console.WriteLine("\tПривет, мир!");
+            Console.WriteLine("\tМне 27 лет");
+            Console.WriteLine("\tMy name is \n Alex");
+            Console.WriteLine("\u0023");
 
             Console.ReadLine();
         }
