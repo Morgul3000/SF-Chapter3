@@ -6,14 +6,15 @@ namespace SF_Chapter3
     {
         static void Main(string[] args)
         {
-            string Name = "Alex";
-            Console.WriteLine(Name);
-            Console.WriteLine("\tПривет, мир!");
-            Console.WriteLine("\tМне 27 лет");
-            Console.WriteLine("\tMy name is \n Alex");
-            Console.WriteLine("\u0023");
+            string MyName = "Egor";
+            byte MyEge = 45;
+            bool HaveIPet = true;
+            double MyShoeSize = 45.5;
 
-            Console.ReadLine();
+            Console.WriteLine($"My name is {MyName}.");
+            Console.WriteLine($"My age is {MyEge}.");
+            Console.WriteLine($"Do i have is Pet? {HaveIPet}.");
+            Console.WriteLine($"My shoe size is {MyShoeSize}.");
         }
     }
 }
