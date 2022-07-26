@@ -6,15 +6,20 @@ namespace SF_Chapter3
     {
         static void Main(string[] args)
         {
-            string MyName = "Egor";
-            byte MyEge = 45;
-            bool HaveIPet = true;
-            double MyShoeSize = 45.5;
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();           
 
-            Console.WriteLine($"My name is {MyName}.");
-            Console.WriteLine($"My age is {MyEge}.");
-            Console.WriteLine($"Do i have is Pet? {HaveIPet}.");
-            Console.WriteLine($"My shoe size is {MyShoeSize}.");
+            Console.Write("How old are you? ");
+            int age = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter your birtday ");
+            string birtday = Console.ReadLine();
+
+            Console.Write("What is your favorit day of week?");
+            DayOfWeek day = (DayOfWeek) int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.WriteLine($"Name = {name}\nAge = {age}\nBirtday = {birtday}\nFavorit day = {day}");
         }
     }
 }
