@@ -9,23 +9,31 @@ namespace SF_Chapter3
             Console.WriteLine("Enter your fovorit colore");
             string color = Console.ReadLine();
 
-            if(color == "red") 
+            switch(color) 
             {
+                case "red":
                 Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Your favorit color is red");
-            }
-            else if(color == "green") 
-            {
+                    break;
+
+                case "green": 
                 Console.BackgroundColor = ConsoleColor.Green;
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Your favorit color is green");
-            }
-            else
-            {
+                    break;
+
+                case "cyan":
                 Console.BackgroundColor = ConsoleColor.Cyan;
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.WriteLine("I din't now what is a color...");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Your favorit color is syan");
+                    break;
+
+                default:
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Your favorit color is yellow");
+                    break;
             }   
         }
     }
