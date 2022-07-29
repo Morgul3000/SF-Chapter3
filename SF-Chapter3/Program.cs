@@ -6,20 +6,27 @@ namespace SF_Chapter3
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();           
+            Console.WriteLine("Enter your fovorit colore");
+            string color = Console.ReadLine();
 
-            Console.Write("How old are you? ");
-            int age = int.Parse(Console.ReadLine());
-
-            Console.Write("Enter your birtday ");
-            string birtday = Console.ReadLine();
-
-            Console.Write("What is your favorit day of week?");
-            DayOfWeek day = (DayOfWeek) int.Parse(Console.ReadLine());
-
-            Console.WriteLine();
-            Console.WriteLine($"Name = {name}\nAge = {age}\nBirtday = {birtday}\nFavorit day = {day}");
+            if(color == "red") 
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("Your favorit color is red");
+            }
+            else if(color == "green") 
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("Your favorit color is green");
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("I din't now what is a color...");
+            }   
         }
     }
 }
